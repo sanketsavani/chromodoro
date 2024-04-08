@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <style>
+    @font-face {
+    font-family: "ProggyCleanSZBP";
+    src: url("/fonts/ProggyCleanSZBP.woff") format("woff");
+    /* Add additional font variations if needed */
+}
+body {
+    font-family: "ProggyCleanSZBP", monospace;
+}
+  </style>
+</head>
+<body>
+  <h1>Pomodoro Timer</h1>
+  <label for="duration">Set timer (minutes):</label>
+  <input type="number" id="duration" min="1" value="25">
+  <div id="timer">25:00</div>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+  <button id="reset">Reset</button>
+  <script src="popup.js"></script>
+</body>
+</html>
